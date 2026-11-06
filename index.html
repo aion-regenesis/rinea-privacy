@@ -16,6 +16,7 @@
   }
   h1 { font-size: 28px; margin-bottom: 4px; }
   h2 { font-size: 20px; margin-top: 36px; }
+  h3 { font-size: 17px; margin-top: 28px; }
   .updated { color: #666; font-size: 14px; margin-bottom: 8px; }
   .lang-switch { margin-bottom: 24px; }
   .lang-switch a { color: #0969da; text-decoration: none; }
@@ -40,47 +41,63 @@
 
 <p class="lang-switch"><a href="ru.html">🇷🇺 Русский</a></p>
 
-<h1>Privacy Policy — Rinéa</h1>
-<p class="updated">Last updated: [ПОДСТАВЬ ТУ ЖЕ ДАТУ, ЧТО И В РУССКОЙ ВЕРСИИ]</p>
-
-<p>This app is developed by a single independent developer ("we", "us", "our" below refers to the developer of Rinéa, not a company). We take your privacy seriously, so this policy is written in plain language, without legal loopholes — it describes exactly what the app does and does not do.</p>
-
+<h1>Rinéa Privacy Policy</h1>
+<p class="updated">Last updated: 6 November 2026</p>
+<p>Rinéa is developed by a single independent developer who publishes apps under the name <strong>Aion ReGenesis</strong>. “We”, “us” and “our” below refer to this developer, not to a company. This policy is written in plain language: it describes exactly what the app does and does not do.</p>
 <div class="summary">
-<strong>The short version.</strong> Rinéa stores all your data only on your device. We have no server, no user database, no analytics, no ad SDKs, and no tracking of your activity. We are physically unable to see your posts, sketches, photos, or notes — the app doesn't even have the ability to send anything over the internet (network access permission is explicitly excluded from the app at a technical level, not just as a promise in this text).</p>
+<p><strong>In short.</strong></p>
+<p>Rinéa stores all your data <strong>on your device only</strong>. We have no server, no user database, no analytics, no advertising networks or SDKs and no activity tracking. We cannot see your posts, sketches, photos or notes. The app cannot send anything to the internet by itself: network permission is removed from it at the technical level.</p>
+<p>The only way any information can reach us is an email that <strong>you yourself</strong> send from your own email account: a crash report or feedback. You see the whole message before sending and can edit it or not send it at all.</p>
 </div>
-
-<h2>What data the app stores, and where</h2>
-<p>Everything you create in the app — posts, drafts, hashtag sets, Idea notes, sketches, reminders, settings — is stored locally on your device, in the app's private storage. We do not collect or see this data in any form.</p>
-
-<h2>Access to your photo gallery</h2>
-<p>The app requests access to your photo gallery (the <code>READ_MEDIA_IMAGES</code> permission on Android 13+, <code>READ_EXTERNAL_STORAGE</code> on older versions) so you can pick existing photos for your posts. The app does not copy or upload the photo files themselves — it only stores a reference to the photo in your device's system gallery (the same place the photo already lives). If you delete a photo from your gallery, the reference in the app will stop working.</p>
-
-<h2>Notifications and reminders</h2>
-<p>The app requests permission to show notifications (<code>POST_NOTIFICATIONS</code>) and to schedule exact alarms (<code>SCHEDULE_EXACT_ALARM</code>) — this is used exclusively for the "Remind me to post" feature, which you configure yourself inside the app. Reminders are scheduled and triggered entirely on your device, with no involvement from any external service.</p>
-
-<h2>Android backup</h2>
-<p>Starting with Android 6.0, the operating system may automatically include app data in standard device backups to <strong>your own personal Google Drive account</strong> (this is a built-in feature of Android itself, present in nearly every app, not specific to Rinéa). If this feature is enabled on your device, Rinéa's data (posts, sketches, settings) may be included in such a backup. This happens through Android itself — we have no access to this backup and receive no data from it. You can manage this feature in your Android device settings independently of Rinéa.</p>
-
+<h2>What data the app stores and where</h2>
+<p>Everything you create in the app is stored <strong>locally on your device</strong>, in the app's private storage. This includes posts, drafts, hashtag sets, ideas, sketches, reminders and settings. We do not collect or see this data.</p>
+<p>For future features (statistics, work history), the app keeps a short event log on the device: when a post was created or changed its status or publish date, when ideas and sketches were created and deleted. The log is stored in the same place, is never sent anywhere and does not contain the text of your publications.</p>
+<h3>Access to photos</h3>
+<p>The app asks for gallery access (<code>READ_MEDIA_IMAGES</code> on Android 13 and later, <code>READ_EXTERNAL_STORAGE</code> on earlier versions) so you can choose photos for posts and sketches. The app <strong>does not copy or upload</strong> the photo files. It stores only a link to the photo in the system gallery. If you delete a photo from the gallery, the link stops working and the app shows that the photo is unavailable.</p>
+<p>Grid analysis (finding repeated photos and neighbouring shots of similar colour), if you turn it on in Settings, runs <strong>entirely on the device</strong> and is not shared anywhere.</p>
+<h3>Notifications and reminders</h3>
+<p>The app uses the notification (<code>POST_NOTIFICATIONS</code>) and exact alarm (<code>SCHEDULE_EXACT_ALARM</code>) permissions only for the publication reminders you set up yourself. The notification permission is requested the first time you choose a reminder. Without the exact alarm permission the notification still arrives, but may be slightly late. The <code>RECEIVE_BOOT_COMPLETED</code> permission is needed to restore scheduled reminders after the device restarts. Reminders are scheduled and delivered <strong>entirely on the device</strong>, without external services.</p>
+<h3>Crash reports</h3>
+<p>If the app closes because of an error, it saves a technical report in its private storage on the device. The report contains technical information only:</p>
+<ul>
+  <li>time of the crash;</li>
+  <li>app version;</li>
+  <li>device manufacturer and model;</li>
+  <li>Android version;</li>
+  <li>a technical description of the error (the place in the app's code where it happened).</li>
+</ul>
+<p>The report <strong>does not contain</strong> your posts, texts, photos, hashtags or any other data you created.</p>
+<p>Sending reports is off by default and can be turned on in Settings (“Crash reports”). When it is on, the app offers to send the report after a crash. The report is sent as an email through <strong>your email app</strong>: you see it before sending and decide whether to send it. When sending is off, the app reminds you once that it can be turned on. Without your action the report is not sent anywhere. Once shown, the report is deleted from the device.</p>
+<h3>Feedback</h3>
+<p>In “About” you can write to us about a bug or suggest an improvement. The app opens your email app with a draft message. At the end of the message there is a short technical block: app version, Android version, device model and app language. It helps us understand the problem. You see the whole message and can edit or delete any part of it before sending.</p>
+<p>From such emails we receive your email address and what you wrote. We use them only to reply to you and to improve the app. We do not share them with third parties or use them for mailings.</p>
+<h3>Advertising</h3>
+<p>Studio has a separate “Ads” screen. Today it shows information about partnering with the developer. In the future it may show advertising placements from Aion ReGenesis partners; the proceeds go to charity, and reports are published on Aion ReGenesis social media.</p>
+<p>How advertising works in Rinéa:</p>
+<ul>
+  <li>it is shown <strong>only on the “Ads” screen</strong> — not in the feed, not in the editor and not in pop-ups;</li>
+  <li>placements are <strong>built into the app itself</strong>: they are not loaded from the internet and use no advertising networks or SDKs;</li>
+  <li>ads <strong>do not track you</strong> and receive none of your data — neither we nor our partners learn that you have seen them;</li>
+  <li>if you tap a placement, the link opens in your browser or in the site’s app. From there, that site’s own rules apply.</li>
+</ul>
+<h3>Android backup</h3>
+<p>Android may automatically include app data in a backup to <strong>your personal Google account</strong> (Google Drive). This is a built-in system feature available to almost all apps. If it is turned on on your device, Rinéa data (posts, sketches, settings) may be part of that backup. This is done by Android itself: we have no access to this backup and receive no data from it. You can manage backup in Android settings.</p>
 <h2>What the app does not do</h2>
 <ul>
   <li>Does not collect usage analytics</li>
-  <li>Does not show ads or use advertising SDKs</li>
-  <li>Does not require an account or sign-in</li>
-  <li>Does not send any data to a server — the app has no operating-system-level permission to access the internet</li>
-  <li>Does not share or sell data to third parties — because it does not collect any in the first place</li>
+  <li>Does not use advertising networks or SDKs and does not show ads outside the “Ads” screen (see “Advertising”)</li>
+  <li>Does not require registration or an account</li>
+  <li>Does not send data to a server: the app has no internet permission</li>
+  <li>Does not share or sell data to third parties</li>
 </ul>
-
 <h2>Children</h2>
-<p>Rinéa is not intended for children under 13 and does not collect any data from users of any age.</p>
-
+<p>Rinéa is not intended for children under 13. The app does not collect data about users of any age.</p>
 <h2>Changes to this policy</h2>
-<p>If the app's functionality changes in a way that affects data handling (for example, a new feature requiring internet access is added), we will update this policy and note the new date at the top of the document. We recommend checking the current version at this same link from time to time.</p>
-
-<h2>Contact us</h2>
-<p>For questions about this policy, you can reach us at: aion.regenesis.info@gmail.com</p>
-
+<p>If the app changes in a way that affects data handling (for example, a feature that needs internet access), we will update this policy and change the date at the top. The current version is always available at the same link and in the app: “Settings” → “Help” → “Privacy policy”.</p>
+<h2>Contact</h2>
+<p>For questions about this policy: <a href="mailto:aion.regenesis.info@gmail.com">aion.regenesis.info@gmail.com</a></p>
 <hr>
-<footer>This policy applies to the Rinéa app, available on Google Play. The app and this policy may be updated; the version posted at this link at the time of your use of the app is the governing version.</footer>
+<footer>This policy applies to the Rinéa app available on Google Play. The version published at this link at the time you use the app is the one in force.</footer>
 
 </body>
 </html>
